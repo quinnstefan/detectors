@@ -34,11 +34,11 @@ require "./materials.pl";
 materials();
 
 #bank
-require "./newbank.pl";
+require "./bank.pl";
 define_bank();
 
 #bank
-require "./newhit.pl";
+require "./hit.pl";
 define_hit();
 
 ###########################################################################################
@@ -145,7 +145,7 @@ sub make_ATOFfixASteel
 {
 	my $rmin = 114.805;
 	my $rmax  = 114.997;
-	my $half_thickness = 250.0/2.0
+	my $half_thickness = 250.0/2.0;
 	my $phistart = 0;
 	my $pspan = 360;
 	#my $mate  = "alloy_steel";
@@ -605,7 +605,7 @@ sub make_ATOFpatchPCB
 	$detector{"color"}       = "ff0000";
 	$detector{"pos"}	 = "0*mm 0*mm $position*mm";
 	$detector{"type"}        = "Tube";
-	$detector{"dimensions"}  = "$rmin*mm $rmax*mm $half_thicknes*mm $phistart*deg $pspan*deg";
+	$detector{"dimensions"}  = "$rmin*mm $rmax*mm $half_thickness*mm $phistart*deg $pspan*deg";
 	$detector{"material"}    = "G4_NYLON-6-6";
 	$detector{"style"}       = 1;
 	$detector{"identifiers"} = $id_string;
@@ -675,7 +675,6 @@ sub make_AlRib2
 {
 	my $rmin = 120.331;
 	my $rmax  = 151.0;
-	my $phistart = 358.64;
 	my $phistart = 70.65;
 	my $pspan = 2.7;
 	my %detector = init_det();
