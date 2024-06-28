@@ -183,7 +183,7 @@ sub make_ATOFfixBrass
 	#$detector{"mother"}      = "mother_shell";
 	$detector{"mother"}      = "ahdc_mother";
 	$detector{"description"} = "ATOF BRASS fixing";
-	$detector{"color"}       = "ffff00";
+	$detector{"color"}       = "53f6d6";
 	$detector{"type"}        = "Tube";
 	$detector{"dimensions"}  = "$rmin*mm $rmax*mm $half_thickness*mm $phistart*deg $pspan*deg";
 	#$detector{"material"}    = $mate;
@@ -731,7 +731,7 @@ sub make_AlRib4
 {
 	my $rmin = 120.331;
 	my $rmax  = 151.000;
-	my $phistart = 241.65;
+	my $phistart = 214.65;
 	my $pspan = 2.7;
 	my %detector = init_det();
 	# my $position = ;
