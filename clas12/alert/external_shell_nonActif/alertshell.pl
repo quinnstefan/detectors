@@ -602,7 +602,7 @@ sub make_ATOFpatchPCB
 	#$detector{"mother"}      = "mother_shell";
 	$detector{"mother"}      = "ahdc_mother";
 	$detector{"description"} = "ATOF Patch PCB";
-	$detector{"color"}       = "ff0000";
+	$detector{"color"}       = "00760e";
 	$detector{"pos"}	 = "0*mm 0*mm $position*mm";
 	$detector{"type"}        = "Tube";
 	$detector{"dimensions"}  = "$rmin*mm $rmax*mm $half_thickness*mm $phistart*deg $pspan*deg";
