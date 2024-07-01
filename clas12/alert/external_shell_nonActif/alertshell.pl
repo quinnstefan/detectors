@@ -493,10 +493,10 @@ sub make_CarbonMountingBar12
 #	my $position = ;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240039);
 	
-	$detector{"name"} = "CarbonMountingBar11";
+	$detector{"name"} = "CarbonMountingBar12";
 	#$detector{"mother"}      = "mother_shell";
 	$detector{"mother"}      = "ahdc_mother";
-	$detector{"description"} = "Carbon Mounting Bar 11";
+	$detector{"description"} = "Carbon Mounting Bar 12";
 	$detector{"color"}       = "ffff00";
 #	$detector{"pos"}         = "0*mm 0*mm $position*mm";
 	$detector{"type"}        = "Tube";
