@@ -1541,7 +1541,7 @@ sub build_targets
     }
 
     # ALERT target 
-    elsif($thisVariation eq "alert")
+    elsif($thisVariation eq "alertD2" || $thisVariation eq "alertH2" || $thisVariation eq "alertHe")
     {
 	# adapted from bonus case
         # alert tg root volume
@@ -1570,9 +1570,23 @@ sub build_targets
         $detector{"color"}       = "ffff00";
         $detector{"type"}        = "Tube";
         $detector{"dimensions"}  = "$Rin*mm $Rout*mm $length*mm 0*deg 360*deg";
-        $detector{"material"}    = "alertTargetGas";
+       # $detector{"material"}    = "alertTargetGas";
         $detector{"style"}       = "1";
-        print_det(\%configuration, \%detector);
+        
+		if($thisVariation eq "alertD2")
+		{
+		$detector{"material"} = ;
+		}
+		if($thisVariation eq "alertH2")
+		{
+		$detector{"material"} = ;
+		}
+		if($thisVariation eq "alertHe")
+		{
+		$detector{"material"} = ;
+		}
+
+	print_det(\%configuration, \%detector);
         
         # ALERT target wall
         $Rin        = 3.0; 
