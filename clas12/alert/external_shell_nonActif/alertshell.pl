@@ -630,7 +630,7 @@ sub make_ATOFCarbonPlate
 	#$detector{"mother"}      = "mother_shell";
 	$detector{"mother"}      = "ahdc_mother";
 	$detector{"description"} = "ATOF Carbon Mounting Plate and Spacer";
-	$detector{"color"}       = "9b7bc8";
+	$detector{"color"}       = "ff0000";
 	$detector{"pos"}         = "0*mm 0*mm $position*mm";
 	$detector{"type"}        = "Tube";
 	$detector{"dimensions"}  = "$rmin*mm $rmax*mm $half_thickness*mm $phistart*deg $pspan*deg";
