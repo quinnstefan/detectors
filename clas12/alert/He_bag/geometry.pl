@@ -46,27 +46,6 @@ sub make_Hebag_tube
 
 }
 
-sub make_Hebag_upstream_window
-{
-        my $rmin = 3.1561;
-	my $rmax  = 25.06;
-        my $phistart = 0;
-	my $pspan = 360;
-	my %detector = init_det();
-
-	$detector{"name"} = "Hebag_upst_w";
-	$detector{"mother"}      = "mother_Hebag";
-	$detector{"description"} = "He bag upstream window";
-	$detector{"color"}       = "00ff00";
-	$detector{"pos"}         = "0*mm 0*mm -150.015*mm";
-	$detector{"type"}        = "Tube";
-	$detector{"dimensions"}  = "$rmin*mm $rmax*mm 0.015*mm $phistart*deg $pspan*deg";
-	$detector{"material"}    = "G4_Al";
-	$detector{"style"}       = 1;
-	#$detector{"identifiers"} = $id_string;
-	print_det(\%configuration, \%detector);
-
-}
 
 sub make_Hebag_downstream_window
 {
