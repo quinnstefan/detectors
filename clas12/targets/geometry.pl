@@ -1550,11 +1550,11 @@ sub build_targets
         my %detector = init_det();
         $detector{"name"}        = "alertTarget";
         $detector{"mother"}      = "root";
-        $detector{"description"} = "ALERT gaseous D2 Target";
+        $detector{"description"} = "ALERT Target";
         $detector{"color"}       = "eeeegg";
         $detector{"type"}        = "Tube";
         $detector{"dimensions"}  = "0*mm $Rout*mm $length*mm 0*deg 360*deg";
-        $detector{"material"}    = "G4_He";
+        $detector{"material"}    = "G4_He"; #is this right?
         $detector{"style"}       = "1";
         $detector{"visible"}     = 0;
         print_det(\%configuration, \%detector);
@@ -1564,9 +1564,9 @@ sub build_targets
         $Rout       = 3.0;
         $length     = 150.0;  
         %detector = init_det();
-        $detector{"name"}        = "gasDeuteriumTarget";
+        $detector{"name"}        = "gasTarget";
         $detector{"mother"}      = "alertTarget";
-        $detector{"description"} = "5 atm deuterium target gas";
+        $detector{"description"} = "target gas";
         $detector{"color"}       = "ffff00";
         $detector{"type"}        = "Tube";
         $detector{"dimensions"}  = "$Rin*mm $Rout*mm $length*mm 0*deg 360*deg";
@@ -1575,15 +1575,15 @@ sub build_targets
         
 		if($thisVariation eq "alertD2")
 		{
-		$detector{"material"} = ;
+		$detector{"material"} = "bonusTargetGas_D2";
 		}
 		if($thisVariation eq "alertH2")
 		{
-		$detector{"material"} = ;
+		$detector{"material"} = "bonusTargetGas_H2";
 		}
 		if($thisVariation eq "alertHe")
 		{
-		$detector{"material"} = ;
+		$detector{"material"} = "bonusTargetGas_He";
 		}
 
 	print_det(\%configuration, \%detector);
