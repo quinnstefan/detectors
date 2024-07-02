@@ -56,7 +56,7 @@ define_hit();
 #my $z_half_atof = 139.85;
 #my $z_half_ribs = 165.0;
 my $z_half_al_ribs = 318.0/2.0;
-my $z_half_epoxy_ribs = 209.126/2.0;
+my $z_half_epoxy_ribs = 172.0/2.0;
 
 # exemple of material array and colors array
 #my @radius  = (6.0, 6.025, 30.0, 75.0,  125.0,  125.3,  155.3); # mm
@@ -645,10 +645,10 @@ sub make_ATOFCarbonPlate
 # make sure all parts are adjusted --> especially position
 sub make_AlRib1
 {
-	my $rmin = 120.331;
-	my $rmax  = 151.0;
-	my $phistart = 358.64;
-	my $pspan = 2.7;
+	my $rmin = 133.4;
+	my $rmax  = 147.4;
+	my $phistart = 357.09;
+	my $pspan = 5.82;
 	my %detector = init_det();
 	# my $position = ;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',24006);
@@ -673,10 +673,10 @@ sub make_AlRib1
 
 sub make_AlRib2
 {
-	my $rmin = 120.331;
-	my $rmax  = 151.0;
-	my $phistart = 70.65;
-	my $pspan = 2.7;
+	my $rmin = 133.4;
+	my $rmax  = 147.4;
+	my $phistart = 69.09;
+	my $pspan = 5.82;
 	my %detector = init_det();
 	# my $position = ;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240062);
@@ -701,10 +701,10 @@ sub make_AlRib2
 
 sub make_AlRib3
 {
-	my $rmin = 120.331;
-	my $rmax  = 151.000;
-	my $phistart = 142.65;
-	my $pspan = 2.70;
+	my $rmin = 133.4;
+	my $rmax  = 147.4;
+	my $phistart = 141.09;
+	my $pspan = 5.82;
 	my %detector = init_det();
 	# my $position = ;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240063);
@@ -729,10 +729,10 @@ sub make_AlRib3
 
 sub make_AlRib4
 {
-	my $rmin = 120.331;
-	my $rmax  = 151.000;
-	my $phistart = 214.65;
-	my $pspan = 2.7;
+	my $rmin = 133.4;
+	my $rmax  = 147.4;
+	my $phistart = 213.09;
+	my $pspan = 5.82;
 	my %detector = init_det();
 	# my $position = ;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240064);
@@ -756,10 +756,10 @@ sub make_AlRib4
 
 sub make_AlRib5
 {
-	my $rmin = 120.331;
-	my $rmax  = 151.0;
-	my $phistart = 286.65;
-	my $pspan = 2.7;
+	my $rmin = 133.4;
+	my $rmax  = 147.4;
+	my $phistart = 285.09;
+	my $pspan = 5.82;
 	my %detector = init_det();
 	# my $position = ;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240065);
@@ -786,12 +786,12 @@ sub make_AlRib5
 # these need to be shorter than Al
 sub make_EpoxyRib1
 {
-	my $rmin = 120.331;
+	my $rmin = 133.4;
 	my $rmax  = 147.4;
-	my $phistart = 22.65;
-	my $pspan = 2.7;
+	my $phistart = 21.09;
+	my $pspan = 5.82;
 	my %detector = init_det();
-	my $position = -1*($z_half_epoxy_ribs)+50.126;
+	my $position = -1*($z_half_epoxy_ribs)+13.0;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240017);
 	
 	$detector{"name"} = "EpoxyRib1";
@@ -814,12 +814,12 @@ sub make_EpoxyRib1
 
 sub make_EpoxyRib2
 {
-	my $rmin = 120.331;
+	my $rmin = 133.4;
 	my $rmax  = 147.4;
-	my $phistart = 46.65;
-	my $pspan = 2.7;
+	my $phistart = 45.09;
+	my $pspan = 5.82;
 	my %detector = init_det();
-	my $position = -1*($z_half_epoxy_ribs)+50.126;
+	my $position = -1*($z_half_epoxy_ribs)+13.0;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240018);
 	
 	$detector{"name"} = "EpoxyRib2";
@@ -842,12 +842,12 @@ sub make_EpoxyRib2
 
 sub make_EpoxyRib3
 {
-	my $rmin = 120.331;
+	my $rmin = 133.4;
 	my $rmax  = 147.4;
-	my $phistart = 94.65;
-	my $pspan = 2.7;
+	my $phistart = 93.09;
+	my $pspan = 5.82;
 	my %detector = init_det();
-	my $position = -1*($z_half_epoxy_ribs)+50.126;
+	my $position = -1*($z_half_epoxy_ribs)+13.0;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240019);
 	
 	$detector{"name"} = "EpoxyRib3";
@@ -870,12 +870,12 @@ sub make_EpoxyRib3
 
 sub make_EpoxyRib4
 {
-	my $rmin = 120.331;
+	my $rmin = 133.4;
 	my $rmax  = 147.4;
-	my $phistart = 118.65;
-	my $pspan = 2.7;
+	my $phistart = 117.09;
+	my $pspan = 5.82;
 	my %detector = init_det();
-	my $position = -1*($z_half_epoxy_ribs)+50.126;
+	my $position = -1*($z_half_epoxy_ribs)+13.0;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240020);
 	
 	$detector{"name"} = "EpoxyRib4";
@@ -897,12 +897,12 @@ sub make_EpoxyRib4
 
 sub make_EpoxyRib5
 {
-	my $rmin = 120.331;
+	my $rmin = 133.4;
 	my $rmax  = 147.4;
-	my $phistart = 166.65;
-	my $pspan = 2.7;
+	my $phistart = 165.09;
+	my $pspan = 5.82;
 	my %detector = init_det();
-	my $position = -1*($z_half_epoxy_ribs)+50.126;
+	my $position = -1*($z_half_epoxy_ribs)+13.0;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240021);
 	
 	$detector{"name"} = "EpoxyRib5";
@@ -924,12 +924,12 @@ sub make_EpoxyRib5
 
 sub make_EpoxyRib6
 {
-	my $rmin = 120.331;
+	my $rmin = 133.4;
 	my $rmax  = 147.4;
-	my $phistart = 190.65;
-	my $pspan = 2.7;
+	my $phistart = 189.09;
+	my $pspan = 5.82;
 	my %detector = init_det();
-	my $position = -1*($z_half_epoxy_ribs)+50.126;
+	my $position = -1*($z_half_epoxy_ribs)+13.0;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240022);
 	
 	$detector{"name"} = "EpoxyRib6";
@@ -951,12 +951,12 @@ sub make_EpoxyRib6
 
 sub make_EpoxyRib7
 {
-	my $rmin = 120.331;
+	my $rmin = 133.4;
 	my $rmax  = 147.4;
-	my $phistart = 238.65;
-	my $pspan = 2.7;
+	my $phistart = 237.09;
+	my $pspan = 5.82;
 	my %detector = init_det();
-	my $position = -1*($z_half_epoxy_ribs)+50.126;
+	my $position = -1*($z_half_epoxy_ribs)+13.0;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240023);
 	
 	$detector{"name"} = "EpoxyRib7";
@@ -978,12 +978,12 @@ sub make_EpoxyRib7
 
 sub make_EpoxyRib8
 {
-	my $rmin = 120.331;
+	my $rmin = 133.4;
 	my $rmax  = 147.4;
-	my $phistart = 262.65;
-	my $pspan = 2.7;
+	my $phistart = 261.09;
+	my $pspan = 5.82;
 	my %detector = init_det();
-	my $position = -1*($z_half_epoxy_ribs)+50.126;
+	my $position = -1*($z_half_epoxy_ribs)+13.0;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240024);
 	
 	$detector{"name"} = "EpoxyRib8";
@@ -1005,12 +1005,12 @@ sub make_EpoxyRib8
 
 sub make_EpoxyRib9
 {
-	my $rmin = 120.331;
+	my $rmin = 133.4;
 	my $rmax  = 147.4;
-	my $phistart = 310.65;
-	my $pspan = 2.7;
+	my $phistart = 309.09;
+	my $pspan = 5.82;
 	my %detector = init_det();
-	my $position = -1*($z_half_epoxy_ribs)+50.126;
+	my $position = -1*($z_half_epoxy_ribs)+13.0;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240025);
 	
 	$detector{"name"} = "EpoxyRib9";
@@ -1032,12 +1032,12 @@ sub make_EpoxyRib9
 
 sub make_EpoxyRib10
 {
-	my $rmin = 120.331;
+	my $rmin = 133.4;
 	my $rmax  = 147.4;
-	my $phistart = 334.65;
-	my $pspan = 2.7;
+	my $phistart = 333.09;
+	my $pspan = 5.82;
 	my %detector = init_det();
-	my $position = -1*($z_half_epoxy_ribs)+50.126;
+	my $position = -1*($z_half_epoxy_ribs)+13.0;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240026);
 	
 	$detector{"name"} = "EpoxyRib10";
