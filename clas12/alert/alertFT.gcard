@@ -11,6 +11,13 @@
 	<!-- He bag -->
 	<detector name="./He_bag/hebag" factory="TEXT" variation="original"/>
 
+	<!-- Beamline configuration: FT is used -->
+	<detector name="../ft/ft"                      factory="TEXT" variation="FTOn"/>
+	<detector name="../beamline/cadBeamline/"	factory="CAD"/>
+	<detector name="../beamline/vacuumLine/"       factory="CAD"/>
+	<detector name="../beamline/beamline"          factory="TEXT" variation="FTOn"/>
+
+
 	<!-- hall field -->
 	<!-- <option name="HALL_FIELD"  value="clas12-newSolenoid"/> -->
 
