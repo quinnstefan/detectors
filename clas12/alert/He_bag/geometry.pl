@@ -17,9 +17,9 @@ sub make_Hebag_mother
 	$detector{"mother"}      = "root";
 	$detector{"description"} = "ALERT He bag mother";
 	$detector{"color"}       = "eeeegg";
-	$detector{"pos"}         = "0*mm 0*mm 550.025*mm";
+	$detector{"pos"}         = "0*mm 0*mm 884.61*mm";
 	$detector{"type"}        = "Tube";
-	$detector{"dimensions"}  = "0.0*mm 26.0*mm 225.03*mm 0*deg 360*deg";
+	$detector{"dimensions"}  = "0.0*mm 26.0*mm 704.39*mm 0*deg 360*deg";
 	$detector{"material"}    = "HECO2";
 	#$detector{"material"}    = "HeBagGas";
 	#$detector{"visible"}     = 1;
@@ -41,7 +41,7 @@ sub make_Hebag_tube
 	$detector{"description"} = "He bag for ALERT";
 	$detector{"color"}       = "00ff00";
 	$detector{"type"}        = "Tube";
-	$detector{"dimensions"}  = "$rmin*mm $rmax*mm 150.0*mm $phistart*deg $pspan*deg";
+	$detector{"dimensions"}  = "$rmin*mm $rmax*mm 704.39*mm $phistart*deg $pspan*deg";
 	$detector{"material"}    = "G4_Al";
 	$detector{"style"}       = 1;
 	print_det(\%configuration, \%detector);
