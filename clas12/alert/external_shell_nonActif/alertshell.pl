@@ -1061,7 +1061,7 @@ sub make_EpoxyRib10
 sub make_frontGasRing
 {
 	my $rmin = 219.075;
-	my $rmax = 234.95;
+	my $rmax = 258.914;
 	my $half_thickness = 12.55/2.0;
 	my $phistart = 0;
 	my $pspan = 360;
