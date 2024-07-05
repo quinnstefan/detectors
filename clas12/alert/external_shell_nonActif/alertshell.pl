@@ -1138,6 +1138,34 @@ sub make_backGasRing
 
 }
 
+# epoxy ring, part of gas enclosure, downstream
+sub make_epoxyring
+{
+	my $rmin = 15.82;
+	my $rmax  = 23.985;
+	my $half_thickness  = 18.0/2.0; 
+	my $phistart = 0;
+	my $pspan = 360;
+	my %detector = init_det();
+	my $position = -1*(10.364+$z_half_al_ribs)+349.25+197.025;
+	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual ',240043);
+
+        $detector{"name"} = "epoxyring";
+	#$detector{"mother"}    = "mother_shell";
+	$detector{"mother"}      = "ahdc_mother";
+        $detector{"description"} = "Back Gas Ring";
+        $detector{"color"}       = "c82566";
+        $detector{"pos"}         = "0*mm 0*mm $position*mm ";
+        $detector{"type"}        = "Tube";
+        $detector{"dimensions"}  = "$rmin*mm $rmax*mm $half_thickness*mm $phistart*deg $pspan*deg";
+        $detector{"material"}    = "EpoxyFiberGlass";
+        $detector{"style"}       = 1;
+        $detector{"identifiers"} = $id_string;
+        print_det(\%configuration, \%detector);
+
+}
+
+
 # Front plates, downstream
 sub make_frontcarbon_1
 {
@@ -1388,6 +1416,7 @@ make_EpoxyRib10();
 make_frontGasRing();
 make_middleGasRing();
 make_backGasRing();
+make_epoxyring();
 
 make_frontmacor();
 make_frontAlPins();
