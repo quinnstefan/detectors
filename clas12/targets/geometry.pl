@@ -1546,7 +1546,7 @@ sub build_targets
 	# adapted from bonus case
         # alert tg root volume
         my $Rout       = 4;
-        my $length     = 155.0;  # mm!
+        my $length     = 188.0;  # mm!
         my %detector = init_det();
         $detector{"name"}        = "alertTarget";
         $detector{"mother"}      = "root";
@@ -1562,7 +1562,7 @@ sub build_targets
         # ALERT target gas volume
         my $Rin        = 0.0;
         $Rout       = 3.0;
-        $length     = 150.0;  
+        $length     = 187.7;  
         %detector = init_det();
         $detector{"name"}        = "gasTarget";
         $detector{"mother"}      = "alertTarget";
@@ -1591,7 +1591,7 @@ sub build_targets
         # ALERT target wall
         $Rin        = 3.0; 
         $Rout       = 3.060; 
-        $length     = 150.0;  
+        $length     = 187.7;  
         %detector = init_det();
         $detector{"name"}        = "alertTargetWall";
         $detector{"mother"}      = "alertTarget";
@@ -1607,7 +1607,7 @@ sub build_targets
 	$Rin        = 3.061;
         $Rout       = 3.1561;
         $length     = 2.0;  # half length
-        my $zPos       = -148.0;  # mm z position
+        my $zPos       = -185.67;  # mm z position
         %detector = init_det();
         $detector{"name"}        = "alertTargetUpEndCapRing";
         $detector{"mother"}      = "alertTarget";
@@ -1623,7 +1623,7 @@ sub build_targets
 	$Rin        = 0.0;
         $Rout       = 3.1561;
         $length     = 0.015;  # half length
-        $zPos       = -150.015;
+        $zPos       = -187.685;
         %detector = init_det();
         $detector{"name"}        = "alertTargetUpEndCapPlate";
         $detector{"mother"}      = "alertTarget";
@@ -1640,7 +1640,7 @@ sub build_targets
         $Rin        = 3.061;
         $Rout       = 3.1561;
         $length     = 2.0;  # half length
-        my $zPos       = 148;  # mm z position
+        my $zPos       = 185.67;  # mm z position
         %detector = init_det();
         $detector{"name"}        = "alertTargetEndCapRing";
         $detector{"mother"}      = "alertTarget";
@@ -1657,7 +1657,7 @@ sub build_targets
         $Rin        = 0.0;
         $Rout       = 3.1561;
         $length     = 0.015;  # half length
-        $zPos       = 150.015;
+        $zPos       = 187.685;
         %detector = init_det();
         $detector{"name"}        = "alertTargetEndCapPlate";
         $detector{"mother"}      = "alertTarget";
