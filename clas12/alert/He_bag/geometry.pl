@@ -42,7 +42,7 @@ sub make_Hebag_tube
 	$detector{"color"}       = "00ff00";
 	$detector{"type"}        = "Tube";
 	$detector{"dimensions"}  = "$rmin*mm $rmax*mm 275.0*mm $phistart*deg $pspan*deg";
-	$detector{"material"}    = "G4_Al";
+	$detector{"material"}    = "G4_KAPTON";
 	$detector{"style"}       = 1;
 	print_det(\%configuration, \%detector);
 
@@ -64,7 +64,7 @@ sub make_Hebag_downstream_window
 	$detector{"pos"}         = "0*mm 0*mm 275.015*mm";
 	$detector{"type"}        = "Tube";
 	$detector{"dimensions"}  = "$rmin*mm $rmax*mm 0.015*mm $phistart*deg $pspan*deg";
-	$detector{"material"}    = "G4_Al";
+	$detector{"material"}    = "G4_KAPTON";
 	$detector{"style"}       = 1;
 	#$detector{"identifiers"} = $id_string;
 	print_det(\%configuration, \%detector);
