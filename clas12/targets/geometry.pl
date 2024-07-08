@@ -1554,12 +1554,13 @@ sub build_targets
         $detector{"color"}       = "eeeegg";
         $detector{"type"}        = "Tube";
         $detector{"dimensions"}  = "0*mm $Rout*mm $length*mm 0*deg 360*deg";
-        $detector{"material"}    = "G4_He"; #is this right?
+        $detector{"material"}    = "Component"; #is this right?
         $detector{"style"}       = "1";
         $detector{"visible"}     = 0;
         print_det(\%configuration, \%detector);
         
         # ALERT target gas volume
+        # made this the mother volume instead
         my $Rin        = 0.0;
         $Rout       = 3.0;
         $length     = 187.7;  
@@ -1575,15 +1576,15 @@ sub build_targets
         
 		if($thisVariation eq "alertD2")
 		{
-		$detector{"material"} = "bonusTargetGas_D2";
+		$detector{"material"} = "alertTargetGas_D2";
 		}
 		if($thisVariation eq "alertH2")
 		{
-		$detector{"material"} = "bonusTargetGas_H2";
+		$detector{"material"} = "alertTargetGas_H2";
 		}
 		if($thisVariation eq "alertHe")
 		{
-		$detector{"material"} = "bonusTargetGas_He";
+		$detector{"material"} = "alertTargetGas_He";
 		}
 
 	print_det(\%configuration, \%detector);
