@@ -30,8 +30,8 @@ sub make_Hebag_mother
 # He bag
 sub make_Hebag_tube
 {
-        my $rmin = 25.0;
-	my $rmax  = 25.06;
+        my $rmin = 19.0;
+	my $rmax  = 19.1;
         my $phistart = 0;
 	my $pspan = 360;
 	my %detector = init_det();
@@ -52,7 +52,7 @@ sub make_Hebag_tube
 sub make_Hebag_downstream_window
 {
         my $rmin = 0.0;
-	my $rmax  = 25.06;
+	my $rmax  = 19.1;
         my $phistart = 0;
 	my $pspan = 360;
 	my %detector = init_det();
@@ -74,7 +74,7 @@ sub make_Hebag_downstream_window
 sub make_Hebag_gas
 {
         my $rmin = 0.0;
-	my $rmax  = 25.00;
+	my $rmax  = 19.00;
         my $phistart = 0;
 	my $pspan = 360;
 	my %detector = init_det();
