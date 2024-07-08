@@ -56,10 +56,10 @@ sub build_mother
 	$detector{"dimensions"}  = "2.5*cm 23.5*cm 27.45*cm 0.*deg 360.*deg";
 	$detector{"description"} = "Alert mother";
 	$detector{"color"}       = "aa00ff";
-	$detector{"material"}    = "G4_AIR";
+	$detector{"material"}    = "AHDCgas";
 	$detector{"mfield"}      = "no";
 	$detector{"ncopy"}       = "1";
-	$detector{"visible"}     = 0; # 0 or 1, 1 for debugging is better
+	$detector{"visible"}     = 1; # 0 or 1, 1 for debugging is better
 	$detector{"style"}       = 0;
 	print_det(\%main::configuration, \%detector);
 }
