@@ -1,7 +1,8 @@
 <gcard>
 	
 	<!-- target. ALERT target -->
-	<detector name="../targets/target" factory="TEXT" variation="alert"/> 
+	<!-- target. Notice variation give the target type. Can be: D2, H2, He -->
+	<detector name="../targets/target" factory="TEXT" variation="alertD2"/> 
 		
 	<!-- Implementation ATOF, ahdc -->
 	<detector name="atof/atof" factory="TEXT" variation="default"/>
