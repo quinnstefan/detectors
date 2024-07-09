@@ -17,9 +17,9 @@ sub make_Hebag_mother
 	$detector{"mother"}      = "root";
 	$detector{"description"} = "ALERT He bag mother";
 	$detector{"color"}       = "eeeegg";
-	$detector{"pos"}         = "0*mm 0*mm 660.991*mm";
+	$detector{"pos"}         = "0*mm 0*mm 592.741*mm";
 	$detector{"type"}        = "Tube";
-	$detector{"dimensions"}  = "0.0*mm 26.0*mm 275.03*mm 0*deg 360*deg";
+	$detector{"dimensions"}  = "0.0*mm 20.0*mm 206.83.03*mm 0*deg 360*deg";
 	$detector{"material"}    = "HECO2";
 	#$detector{"material"}    = "HeBagGas";
 	#$detector{"visible"}     = 1;
@@ -41,7 +41,7 @@ sub make_Hebag_tube
 	$detector{"description"} = "He bag for ALERT";
 	$detector{"color"}       = "00ff00";
 	$detector{"type"}        = "Tube";
-	$detector{"dimensions"}  = "$rmin*mm $rmax*mm 275.0*mm $phistart*deg $pspan*deg";
+	$detector{"dimensions"}  = "$rmin*mm $rmax*mm 206.8*mm $phistart*deg $pspan*deg";
 	$detector{"material"}    = "G4_KAPTON";
 	$detector{"style"}       = 1;
 	print_det(\%configuration, \%detector);
@@ -61,7 +61,7 @@ sub make_Hebag_downstream_window
 	$detector{"mother"}      = "mother_Hebag";
 	$detector{"description"} = "He bag downstream window";
 	$detector{"color"}       = "00ff00";
-	$detector{"pos"}         = "0*mm 0*mm 275.015*mm";
+	$detector{"pos"}         = "0*mm 0*mm 206.845*mm";
 	$detector{"type"}        = "Tube";
 	$detector{"dimensions"}  = "$rmin*mm $rmax*mm 0.015*mm $phistart*deg $pspan*deg";
 	$detector{"material"}    = "G4_KAPTON";
@@ -84,7 +84,7 @@ sub make_Hebag_gas
 	$detector{"description"} = "He bag gas for ALERT";
 	$detector{"color"}       = "ffff00";
 	$detector{"type"}        = "Tube";
-	$detector{"dimensions"}  = "$rmin*mm $rmax*mm 275.0*mm $phistart*deg $pspan*deg";
+	$detector{"dimensions"}  = "$rmin*mm $rmax*mm 206.8*mm $phistart*deg $pspan*deg";
 	$detector{"material"}    = "HECO2";
 	$detector{"style"}       = 1;
 	print_det(\%configuration, \%detector);
