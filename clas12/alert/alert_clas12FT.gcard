@@ -26,7 +26,7 @@
 
 	<!-- Beamline configuration: FT is used -->
 	<detector name="../ft/ft"                      factory="TEXT" variation="FTOn"/>
-	<detector name="../beamline/cadBeamlineFTOFF/" factory="CAD"/>
+	<detector name="../beamline/cadBeamline/" factory="CAD"/>
 	<!-- <detector name="../beamline/vacuumLine/"       factory="CAD"/> -->
 	<!-- <detector name="../beamline/beamline"          factory="TEXT" variation="FTOn"/> -->
 	<!-- <detector name="airPipe">  -->
@@ -35,7 +35,7 @@
 
 	<!-- forward carriage -->
 	<detector name="../fc/forwardCarriage" factory="TEXT" variation="TorusSymmetric"/>
-	<detector name="../dc/dc"              factory="TEXT" variation="default"/>
+	<!-- <detector name="../dc/dc"              factory="TEXT" variation="default"/> -->
 	<detector name="../ftof/ftof"          factory="TEXT" variation="default"/>
 	<detector name="../ec/ec"              factory="TEXT" variation="default"/>
 	<detector name="../pcal/pcal"          factory="TEXT" variation="default"/>
