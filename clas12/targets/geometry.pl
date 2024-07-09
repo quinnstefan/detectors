@@ -1545,28 +1545,28 @@ sub build_targets
     {
 	# adapted from bonus case
         # alert tg root volume
-        my $Rout       = 4;
-        my $length     = 188.0;  # mm!
-        my %detector = init_det();
-        $detector{"name"}        = "alertTarget";
-        $detector{"mother"}      = "root";
-        $detector{"description"} = "ALERT Target";
-        $detector{"color"}       = "eeeegg";
-        $detector{"type"}        = "Tube";
-        $detector{"dimensions"}  = "0*mm $Rout*mm $length*mm 0*deg 360*deg";
-        $detector{"material"}    = "Component"; #is this right?
-        $detector{"style"}       = "1";
-        $detector{"visible"}     = 0;
-        print_det(\%configuration, \%detector);
+#        my $Rout       = 4;
+#        my $length     = 188.0;  # mm!
+#        my %detector = init_det();
+#        $detector{"name"}        = "alertTarget";
+#        $detector{"mother"}      = "root";
+#        $detector{"description"} = "ALERT Target";
+#        $detector{"color"}       = "eeeegg";
+#        $detector{"type"}        = "Tube";
+#        $detector{"dimensions"}  = "0*mm $Rout*mm $length*mm 0*deg 360*deg";
+#        $detector{"material"}    = "Component"; #is this right?
+#        $detector{"style"}       = "1";
+#        $detector{"visible"}     = 0;
+#        print_det(\%configuration, \%detector);
         
         # ALERT target gas volume
         # made this the mother volume instead
         my $Rin        = 0.0;
-        $Rout       = 3.0;
-        $length     = 187.7;  
-        %detector = init_det();
-        $detector{"name"}        = "gasTarget";
-        $detector{"mother"}      = "alertTarget";
+        my $Rout       = 3.0;
+        my $length     = 187.7;  
+        my %detector = init_det();
+        $detector{"name"}        = "alertTarget";
+        $detector{"mother"}      = "root";
         $detector{"description"} = "target gas";
         $detector{"color"}       = "ffff00";
         $detector{"type"}        = "Tube";
