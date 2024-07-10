@@ -654,6 +654,15 @@ sub materials
         $mat{"ncomponents"}   = "1";
         $mat{"components"}    = "deuteriumGas 1";
         print_mat(\%configuration, \%mat);
+
+	#HECO2
+	%mat = init_mat();
+	$mat{"name"}          ="HECO2";
+	$mat{"description"}   = "Mother gas";
+	$mat{"density"}       = "0.000487";  # in g/cm3
+	$mat{"ncomponents"}   = "3";
+	$mat{"components"}    = "He 1 C 1 O 2";
+	print_mat(\%configuration, \%mat);
     }
     if($thisVariation eq "alertH2")
     {
@@ -665,6 +674,15 @@ sub materials
         $mat{"ncomponents"}   = "1";
         $mat{"components"}    = "Hgas 1";
         print_mat(\%configuration, \%mat);
+	
+	#HECO2
+	%mat = init_mat();
+	$mat{"name"}          ="HECO2";
+	$mat{"description"}   = "Mother gas";
+	$mat{"density"}       = "0.000487";  # in g/cm3
+	$mat{"ncomponents"}   = "3";
+	$mat{"components"}    = "He 1 C 1 O 2";
+	print_mat(\%configuration, \%mat);
     }
     if($thisVariation eq "alertHe")
     {
@@ -676,6 +694,15 @@ sub materials
         $mat{"ncomponents"}   = "1";
         $mat{"components"}    = "deuteriumGas 1";
         print_mat(\%configuration, \%mat);
+	
+	#HECO2
+	%mat = init_mat();
+	$mat{"name"}          ="HECO2";
+	$mat{"description"}   = "Mother gas";
+	$mat{"density"}       = "0.000487";  # in g/cm3
+	$mat{"ncomponents"}   = "3";
+	$mat{"components"}    = "He 1 C 1 O 2";
+	print_mat(\%configuration, \%mat);
     }
 
 }
