@@ -87,7 +87,6 @@ my $z_half_epoxy_ribs = 172.0/2.0;
 
 
 # ATOF module fixing part
-# confirm that you don't need a position for wedge PCB, etc.
 sub make_wedgePCB
 {
 	my $rmin = 101.5;
@@ -115,7 +114,6 @@ sub make_wedgePCB
 }
 
 
-# does the ahdc_mother need to be updated?
 sub make_ATOFfixAl
 {
 	my $rmin = 111;
@@ -194,8 +192,6 @@ sub make_ATOFfixBrass
 	
 }
 
-#make sure you updated - carbon mounting bar
-# decide if this is going to be a loop/how to do the angles
 sub make_CarbonMountingBar1
 {
 	my $rmin = 124.5;
@@ -642,7 +638,6 @@ sub make_ATOFCarbonPlate
 }
 
 # AL ribs for ATOF sustain
-# make sure all parts are adjusted --> especially position
 sub make_AlRib1
 {
 	my $rmin = 133.4;
@@ -783,7 +778,6 @@ sub make_AlRib5
 
 
 # Epoxy ribs for ATOF
-# these need to be shorter than Al
 sub make_EpoxyRib1
 {
 	my $rmin = 133.4;
@@ -1195,7 +1189,6 @@ sub make_frontcarbon_1
 	
 }
 
-#update position
 sub make_frontmacor
 {
 	my $rmin = 28.000;
