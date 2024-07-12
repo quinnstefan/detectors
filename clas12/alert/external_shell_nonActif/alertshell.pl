@@ -1060,7 +1060,7 @@ sub make_frontGasRing
 	my $phistart = 0;
 	my $pspan = 360;
 	my %detector = init_det();
-	my $position = -1*(10.364+$z_half_al_ribs)+$half_thickness+6.275;
+	my $position = -1*(10.364+$z_half_al_ribs)+257.5+$half_thickness+6.275;
 	my $id_string = join('','sector manual ',0, ' superlayer manual ',0,' layer manual ',0,' component manual',240012);
 
 	$detector{"name"} = "frontGasRing";
