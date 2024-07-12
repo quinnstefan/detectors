@@ -86,7 +86,7 @@ sub make_Hebag_gas
 	$detector{"color"}       = "ffff00";
 	$detector{"pos"}	 = "0*mm 0*mm -0.015*mm";
 	$detector{"type"}        = "Tube";
-	$detector{"dimensions"}  = "$rmin*mm $rmax*mm 296.8*mm $phistart*deg $pspan*deg";
+	$detector{"dimensions"}  = "$rmin*mm $rmax*mm 323.85*mm $phistart*deg $pspan*deg";
 	$detector{"material"}    = "HECO2";
 	$detector{"style"}       = 1;
 	print_det(\%configuration, \%detector);
