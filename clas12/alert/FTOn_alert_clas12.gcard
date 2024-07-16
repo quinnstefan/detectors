@@ -44,7 +44,7 @@
 	<detector name="../../../clas12Tags/experiments/clas12/ltcc/cad/"          factory="CAD"/>
 	
 	<!-- hall field -->
-	<option name="HALL_FIELD"  value="clas12-newSolenoid"/> -->
+	<option name="HALL_FIELD"  value="clas12-newSolenoid"/>
 
 	<!-- fields, precise mode -->
 	<option name="FIELD_PROPERTIES" value="TorusSymmetric,     2*mm, G4ClassicalRK4, linear"/>
